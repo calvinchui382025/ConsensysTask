@@ -1,0 +1,13 @@
+DealCostId, DealLineId, CostCode, CostAmount, CostCurrency
+4001, 3001, transport, 3.78, USD
+4002, 3001, demurrage, 2.00, USD
+4003, 3002, transport, 3.78, USD
+4004, 3002, demurrage, 2.00, USD
+4005, 3003, transport, 3.78, USD
+4006, 3003, demurrage, 2.00, USD
+4007, 3004, transport, 3.78, USD
+4008, 3004, demurrage, 2.00, USD
+4009, 3005, transport, 3.78, USD
+4010, 3005, demurrage, 2.00, USD
+4011, 3006, transport, 3.78, USD
+4012, 3006, demurrage, 2.00, USD

@@ -1,26 +1,51 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
+import Table from './components/Table.jsx';
+import logo from './consensys-logo.png';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      information: []
+    }
+    this.getInfo = this.getInfo.bind(this);
+  }
+
+  componentDidMount() {
+    console.log('Mounted')
+    this.getInfo(); //for quick testing
+  }
+
+  getInfo() {
+    axios.get('/information', {})
+      .then((response) => {
+        console.log(response.data);
+        this.setState({
+          information: response.data
+        })
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        {/* <button
+          onClick={
+            () => {
+              console.log(this.state)
+            }
+          }
+        >Get Info From Files</button> */}
+        <img src={logo} className="App-logo" alt="logo" />
+        <Table 
+        information = {this.state.information}
+        />
+      </div >
     );
   }
 }

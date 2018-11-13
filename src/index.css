@@ -12,3 +12,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.txn-table {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: .8rem;
+  margin: 0.5rem;
+  line-height: 1.5;
+  flex: 1 1 auto;
+}
+
+.txn-row {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.txn-data {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0px;
+  white-space: nowrap;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.txn-row:nth-of-type(even) {
+  background-color: white;
+}
+
+.txn-row:nth-of-type(odd) {
+  background-color: lightgrey;
+}
+
+.txn-ro {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: lightblue;
+}

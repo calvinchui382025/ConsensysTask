@@ -1,0 +1,8 @@
+DealLineId, DealId, DealType, CommodityCode, ContractQty, Uom, Price, LoadingPort, DischargePort
+3001, 1001, Future, WTI, 100000, BBL, 82.00, Houston, Singapore
+3002, 1001, Future, WTI, 200000, BBL, 83.00, New Orleans, Jebel Ali
+3003, 1001, Future, WTI, 300000, BBL, 84.00, Jebel Ali, Corpus Christi
+3004, 1002, Future, Dubai Crude, 100000, BBL, 82.00, Houston, Singapore
+3005, 1002, Future, Dubai Crude, 200000, BBL, 83.00, New Orleans, Jebel Ali
+3006, 1002, Future, Dubai Crude, 300000, BBL, 84.00, Jebel Ali, Corpus Christi
+

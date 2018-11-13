@@ -1,0 +1,3 @@
+DealId, TraderName, IncoTerms, DealDate, DealStatus
+1001, Trader Joe, CIF, 01-01-2018, ACTIVE
+1002, Jane Smith, FOB, 02-02-2018, CLOSED
